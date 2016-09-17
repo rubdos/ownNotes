@@ -243,7 +243,6 @@
       "type": "bug"
     }
   ], 
-  "sdf": [], 
   "version": [
     {
       "text": "Increase version in spec and yaml", 
