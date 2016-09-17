@@ -1,2 +1,2 @@
-VERSION=versiondfdf
+VERSION=sdf
 CODENAME=None
