@@ -6,7 +6,7 @@ import net.khertan.documenthandler 1.0
 
 Page {
     id: page
-    allowedOrientations: Orientation.All;
+    allowedOrientations: Orientation.Landscape | Orientation.Portrait;
     property alias path: textEditor.path;
 
     Python {
