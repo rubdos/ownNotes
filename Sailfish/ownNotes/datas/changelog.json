@@ -242,11 +242,5 @@
       "text": "Remove some utf-8 debug printing that could raise exception if stdout isnt in utf-8", 
       "type": "bug"
     }
-  ], 
-  "version": [
-    {
-      "text": "Increase version in spec and yaml", 
-      "type": "bug"
-    }
   ]
 }

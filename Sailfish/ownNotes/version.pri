@@ -1,2 +1,2 @@
-VERSION=version
-CODENAME=None
+VERSION=1.8.2
+CODENAME=FlyingDuck
