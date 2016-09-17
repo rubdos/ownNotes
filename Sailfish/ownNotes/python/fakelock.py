@@ -13,15 +13,15 @@ See ownCloud issue #17732 for details about the lack of WebDAV LOCKs:
 https://github.com/owncloud/core/issues/17732
 """
 
-import contextlib
+class Fakelock:
+    def __init__(self):
+        """Do nothing"""
+        pass
 
-@contextlib.contextmanager
+    def __enter__(self):
+        """Do nothing"""
+        pass
 
-def fakelock():
-    """
-    Empty context manager that does nothing. Courtesey of @brett_lempereurs
-    pithiness :)
-    https://gist.github.com/brett-lempereur/31c67d8d3b251bd5175e104e656d781c
-    https://twitter.com/brettlempereur/status/773566420709994496
-    """
-    yield
+    def __exit__(self, exc, exctype, exctb):
+        """Do nothing"""
+    pass
