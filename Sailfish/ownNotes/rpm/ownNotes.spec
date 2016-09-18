@@ -13,7 +13,7 @@ Name:       ownNotes
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    A notes taking app with ownCloud Sync
-Version:    1.8.2
+Version:    1.8.4
 Release:    1
 Group:      Qt/Qt
 License:    LICENSE
@@ -31,7 +31,7 @@ BuildRequires:  python3-devel
 BuildRequires:  desktop-file-utils
 
 %description
-A notes taking app with ownCloud Sync and markdown support.
+A note taking app with ownCloud Sync and markdown support.
 
 %prep
 %setup -q -n %{name}-%{version}
