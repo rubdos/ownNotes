@@ -248,5 +248,55 @@
       "text": "Increase version in spec and yaml", 
       "type": "bug"
     }
+  ], 
+  "1.8.4": [
+    {
+      "text": "Changes to About Page wording", 
+      "type": "feature"
+    }, 
+    {
+      "text": "Add 'Show on cover' menu item", 
+      "type": "feature"
+    }, 
+    {
+      "text": "Add cover preview", 
+      "type": "feature"
+    }, 
+    {
+      "text": "Remove pull-up menu", 
+      "type": "feature"
+    }, 
+    {
+      "text": "Change icon and cover", 
+      "type": "feature"
+    }, 
+    {
+      "text": "Allow edit screen orientation change", 
+      "type": "feature"
+    }, 
+    {
+      "text": "Remove contextlib version of fakelock", 
+      "type": "bug"
+    }, 
+    {
+      "text": "Restrict orientation to prevent invertion", 
+      "type": "bug"
+    }, 
+    {
+      "text": "Note push on save removed", 
+      "type": "bug"
+    }, 
+    {
+      "text": "Hide note menu when unpublishable", 
+      "type": "bug"
+    }, 
+    {
+      "text": "Fix font family config", 
+      "type": "bug"
+    }, 
+    {
+      "text": "Remove WebDAV LOCK functionality", 
+      "type": "bug"
+    }
   ]
 }
