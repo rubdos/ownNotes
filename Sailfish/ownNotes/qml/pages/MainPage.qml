@@ -344,11 +344,11 @@ Page {
         id: aboutInfos
         property string version:VERSION
         property string changelog:''
-        property string firstPart:qsTr('A note taking application with sync for ownCloud or any WebDav.') +
-                                    '<br>' + qsTr('Web Site : http://khertan.net/ownnotes') +
+        property string firstPart:qsTr('A note-taking app with ownCloud and WebDav sync.') +
+                                    '<br><a href="http://www.flypig.co.uk/?to=ownnotes">' + qsTr('http://www.flypig.co.uk/?to=ownnotes') + '</a>' +
                                     '<br><br>' + qsTr('By') +' Benoît HERVIER (Khertan)' +
                                     '<br><b>' + qsTr('Licensed under GPLv3') + '</b>'
-        property string clprefix:   '<br><br><b>Changeslog : </b><br><br>'
+        property string clprefix:   '<br><br><b>Changelog : </b><br><br>'
         property string secondPart: '<br><br><b>Thanks to : </b>' +
                                     '<br>* Radek Novacek' +
                                     '<br>* caco3 on talk.maemo.org for debugging' +
@@ -358,22 +358,26 @@ Page {
                                     '<br>* Janne Edelman for Finnish translation' +
                                     '<br>* André Koot for Dutch translation' +
                                     '<br>* Equeim for Russian translation and translation patch' +
-                                    '<br><br><b>Privacy Policy : </b>' +
-                                    '<br>ownNotes can sync your notes with a webdav storage or ownCloud instance. For this ownNotes need to know the Url, Login and Password to connect to. But this is optionnal, and you can use ownNotes without the sync feature.' +
+                                    '<br><br><b>Privacy Policy: </b>' +
+                                    '<br>ownNotes can sync your notes with WebDav storage or an ownCloud instance. For this ownNotes needs to know the URL, login and password to connect to. This is optional, and you can use ownNotes without the sync feature.' +
                                     '<br><br>' +
-                                    'Which datas are transmitted :' +
-                                    '<br>* Login and Password will only be transmitted to the url you put in the Web Host setting.' +
-                                    '<br>* When using the sync features all your notes can be transmitted to the server you put in the Web Host setting' +
+                                    'What data is transmitted:' +
+                                    '<ul>' +
+                                    '<li>Login and password will only be transmitted to the server URL you provide.</li>' +
+                                    '<li>When syncing all your notes may be sent to this server.</li>' +
+                                    '</ul>' +
                                     '<br><br>' +
-                                    'Which datas are stored :' +
-                                    '<br>* All notes are stored as text files' +
-                                    '<br>* An index of all files, with last synchronization datetime' +
-                                    '<br>* Url & Path of the server, and login and password are stored in the settings file.'  +
+                                    'What data is stored:' +
+                                    '<ul>' +
+                                    '<li>All notes are stored as text files.</li>' +
+                                    '<li>An index of all files, including last sync date and time.</li>' +
+                                    '<li>Server URL, path, login and password are stored in the settings file.</li>' +
+                                    '</ul>' +
                                     '<br><br>' +
-                                    '<b>Markdown format :</b>' +
-                                    '<br>For a complete documentation on the markdown format,' +
-                                    ' see <a href="http://daringfireball.net/projects/markdown/syntax">Daringfireball Markdown Syntax</a>. Hilighting on ownNotes support only few tags' +
-                                    'of markdown syntax: title, bold, italics, links'
+                                    '<b>Markdown format:</b>' +
+                                    '<br>For complete documentation on the markdown format, ' +
+                                    'see <a href="http://daringfireball.net/projects/markdown/syntax">Daringfireball Markdown Syntax</a>. OwnNotes supports only ' +
+                                    'title, bold, italics and link markdown highlighting.'
     }
 }
 
