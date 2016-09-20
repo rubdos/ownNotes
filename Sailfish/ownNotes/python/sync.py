@@ -153,9 +153,9 @@ class WebdavClient(object):
 
         local_time = datetime.datetime.utcnow()
 
-        response = self.wc.options('/').headers.get('date')
+        response = self.wc.options(self.basepath).headers.get('date')
         if response is None:
-            response = self.wc.options('/').headers.get('Date')
+            response = self.wc.options(self.basepath).headers.get('Date')
 
         remote_datetime = \
             rfc822.parsedate(response)
