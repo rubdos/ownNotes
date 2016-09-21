@@ -12,7 +12,7 @@ Name:       ownNotes
 %{!?qtc_qmake5:%define qtc_qmake5 %qmake5}
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
-Summary:    A notes taking app with ownCloud Sync
+Summary:    A note taking app with ownCloud Sync
 Version:    1.8.6
 Release:    1
 Group:      Qt/Qt

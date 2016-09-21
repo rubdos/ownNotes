@@ -65,12 +65,13 @@ def generate_changelog(version):
     print("Generate HTML Changelog")
     with open("datas/changelog.html", "w") as fh:
         for version in sorted(changelog, reverse=True):
-            print(version)
-            fh.write('<b>%s</b> : <br>' % version)
-            for entry in changelog[version]:
-                fh.write('%s : %s<br>' % (entry['type'].title(),
-                                          entry['text'].title()))
-            fh.write('<br>')
+            if len(changelog[version]) > 0:
+		          print(version)
+		          fh.write('<b>%s</b> : <br>' % version)
+		          for entry in changelog[version]:
+		              fh.write('%s : %s<br>' % (entry['type'].title(),
+		                                        entry['text'].title()))
+		          fh.write('<br>')
 
 
 def write_version(version, codename):
