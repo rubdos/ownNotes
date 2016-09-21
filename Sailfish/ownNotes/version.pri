@@ -1,2 +1,2 @@
-VERSION=1.8.4
-CODENAME=SwimCat
+VERSION=1.8.5
+CODENAME=Spottedfrog

@@ -298,5 +298,11 @@
       "text": "Remove WebDAV LOCK functionality", 
       "type": "bug"
     }
+  ], 
+  "1.8.5": [
+    {
+      "text": "Ensure cover background image is correct size", 
+      "type": "bug"
+    }
   ]
 }
