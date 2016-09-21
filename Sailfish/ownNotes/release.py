@@ -64,7 +64,7 @@ def generate_changelog(version):
 
     print("Generate HTML Changelog")
     with open("datas/changelog.html", "w") as fh:
-        for version in sorted(changelog):
+        for version in sorted(changelog, reverse=True):
             print(version)
             fh.write('<b>%s</b> : <br>' % version)
             for entry in changelog[version]:
@@ -126,13 +126,13 @@ if push_only and version is None:
     parser.print_help()
     sys.exit(1)
 
-if version is None:
-    print("Current version: %s" % current_version())
-    sys.exit(2)
-
 if changelog_only:
     generate_changelog(version)
     sys.exit(4)
+
+if version is None:
+    print("Current version: %s" % current_version())
+    sys.exit(2)
 
 version = version.strip()
 

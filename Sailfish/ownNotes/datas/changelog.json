@@ -1,4 +1,10 @@
 {
+  "null": [
+    {
+      "text": "Prevent access to domain root on sync", 
+      "type": "bug"
+    }
+  ], 
   "1.0.0": [
     {
       "text": "Initial fork from KhtNotes using custom version of PyOtherSide", 

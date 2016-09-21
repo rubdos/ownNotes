@@ -349,16 +349,19 @@ Page {
                                     '<br><br>' + qsTr('By') +' Benoît HERVIER (Khertan)' +
                                     '<br><b>' + qsTr('Licensed under GPLv3') + '</b>'
         property string clprefix:   '<br><br><b>Changelog : </b><br><br>'
-        property string secondPart: '<br><br><b>Thanks to : </b>' +
-                                    '<br>* Radek Novacek' +
-                                    '<br>* caco3 on talk.maemo.org for debugging' +
-                                    '<br>* Thomas Perl for PyOtherSide' +
-                                    '<br>* Antoine Vacher for debugging help and tests' +
-                                    '<br>* 太空飞瓜 for Chinese translation' +
-                                    '<br>* Janne Edelman for Finnish translation' +
-                                    '<br>* André Koot for Dutch translation' +
-                                    '<br>* Equeim for Russian translation and translation patch' +
-                                    '<br><br><b>Privacy Policy: </b>' +
+        property string secondPart: '<br><b>Thanks to : </b>' +
+                                    '<ul>' +
+                                    '<li>Thomas Renard for sync bug fixing</li>' +
+                                    '<li>Radek Novacek</li>' +
+                                    '<li>caco3 on talk.maemo.org for debugging</li>' +
+                                    '<li>Thomas Perl for PyOtherSide</li>' +
+                                    '<li>Antoine Vacher for debugging help and tests</li>' +
+                                    '<li>太空飞瓜 for Chinese translation</li>' +
+                                    '<li>Janne Edelman for Finnish translation</li>' +
+                                    '<li>André Koot for Dutch translation</li>' +
+                                    '<li>Equeim for Russian translation and translation patch</li>' +
+                                    '</ul>' +
+                                    '<br><b>Privacy Policy: </b>' +
                                     '<br>ownNotes can sync your notes with WebDav storage or an ownCloud instance. For this ownNotes needs to know the URL, login and password to connect to. This is optional, and you can use ownNotes without the sync feature.' +
                                     '<br><br>' +
                                     'What data is transmitted:' +
@@ -366,14 +369,14 @@ Page {
                                     '<li>Login and password will only be transmitted to the server URL you provide.</li>' +
                                     '<li>When syncing all your notes may be sent to this server.</li>' +
                                     '</ul>' +
-                                    '<br><br>' +
+                                    '<br>' +
                                     'What data is stored:' +
                                     '<ul>' +
                                     '<li>All notes are stored as text files.</li>' +
                                     '<li>An index of all files, including last sync date and time.</li>' +
                                     '<li>Server URL, path, login and password are stored in the settings file.</li>' +
                                     '</ul>' +
-                                    '<br><br>' +
+                                    '<br>' +
                                     '<b>Markdown format:</b>' +
                                     '<br>For complete documentation on the markdown format, ' +
                                     'see <a href="http://daringfireball.net/projects/markdown/syntax">Daringfireball Markdown Syntax</a>. OwnNotes supports only ' +
