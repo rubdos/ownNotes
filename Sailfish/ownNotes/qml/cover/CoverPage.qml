@@ -39,14 +39,15 @@ CoverBackground {
         font {
             pixelSize: (cover.size === Cover.Small ? Theme.fontSizeExtraSmall : Theme.fontSizeMedium)
         }
-
         visible: !cover.preview
     }
     Image {
         id: icon
         source: (cover.size == Cover.Small ?
-                    Qt.resolvedUrl('/usr/share/ownNotes/icons/coversmall.png') :
-                    Qt.resolvedUrl('/usr/share/ownNotes/icons/coverlarge.png'))
+                    (cover.width <= 148 ? Qt.resolvedUrl('/usr/share/ownNotes/icons/coversmall-148.png') :
+                                          Qt.resolvedUrl('/usr/share/ownNotes/icons/coversmall-185.png')) :
+                    (cover.width <= 234 ? Qt.resolvedUrl('/usr/share/ownNotes/icons/coverlarge-234.png') :
+                                          Qt.resolvedUrl('/usr/share/ownNotes/icons/coverlarge-293.png')))
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.verticalCenter: parent.verticalCenter;
         opacity: 0.15
