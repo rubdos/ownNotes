@@ -1,2 +1,2 @@
-VERSION=1.8.5
-CODENAME=Spottedfrog
+VERSION=1.8.6
+CODENAME=Shrubtoad

@@ -1,10 +1,4 @@
 {
-  "null": [
-    {
-      "text": "Prevent access to domain root on sync", 
-      "type": "bug"
-    }
-  ], 
   "1.0.0": [
     {
       "text": "Initial fork from KhtNotes using custom version of PyOtherSide", 
@@ -308,6 +302,22 @@
   "1.8.5": [
     {
       "text": "Ensure cover background image is correct size", 
+      "type": "bug"
+    }
+  ], 
+  "1.8.6": [
+    {
+      "text": "Reverse changelog in About page", 
+      "type": "feature"
+    }, 
+    {
+      "text": "Prevent access to domain root on sync", 
+      "type": "bug"
+    }
+  ], 
+  "null": [
+    {
+      "text": "Prevent access to domain root on sync", 
       "type": "bug"
     }
   ]
