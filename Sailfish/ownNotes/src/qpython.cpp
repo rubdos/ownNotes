@@ -319,7 +319,7 @@ QPython::toPython(QVariant v)
         return PyLong_FromLong(v.toInt());
     } else if (type == QVariant::Double) {
         return PyFloat_FromDouble(v.toDouble());
-    } else if (type == QVariant::List) {
+    } else if (v.canConvert(QVariant::List)) {
         QVariantList l = v.toList();
 
         PyObject *result = PyList_New(l.size());
@@ -345,6 +345,8 @@ QPython::toPython(QVariant v)
     } else if (v.canConvert(QMetaType::QString)) {
         QByteArray utf8bytes = v.toString().toUtf8();
         return PyUnicode_FromString(utf8bytes.constData());
+    } else {
+        qDebug() << "XXWX Qt -> Python type : " << v.typeName();
     }
 
     qDebug() << "XXWX Qt -> Python conversion not handled yet";
